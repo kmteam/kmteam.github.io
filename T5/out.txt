@@ -1,0 +1,335 @@
+
+===============================================================================
+|  TRANSPORT STREAM ANALYSIS REPORT                                           |
+|=============================================================================|
+|  Transport Stream Id: ......... 16 (0x0010)  |  Services: .............. 6  |
+|  Bytes: ......................... 9,635,000  |  PID's: Total: ......... 11  |
+|  TS packets: ....................... 51,250  |         Clear: ......... 11  |
+|     With invalid sync: .................. 0  |         Scrambled: ...... 0  |
+|     With transport error: ............... 0  |         With PCR's: ..... 1  |
+|     Suspect and ignored: ................ 0  |         Unreferenced: ... 0  |
+|-----------------------------------------------------------------------------|
+|  Transport stream bitrate, based on ....... 188 bytes/pkt    204 bytes/pkt  |
+|  User-specified: ................................... None             None  |
+|  Estimated based on PCR's: ................ 3,935,743 b/s    4,270,699 b/s  |
+|-----------------------------------------------------------------------------|
+|  Broadcast time: .................................... 19 sec (0 mn 19 sec)  |
+|-----------------------------------------------------------------------------|
+|  Srv Id  Service Name                              Access          Bitrate  |
+|  0x00BA  Telecinco .................................... C          Unknown  |
+|  0x00BB  Cuatro ....................................... C          Unknown  |
+|  0x00BC  FDF .......................................... C          Unknown  |
+|  0x00BD  Divinity ..................................... C          Unknown  |
+|  0x00BE  Telecinco HD ................................. C    3,861,328 b/s  |
+|  0x00BF  Cuatro HD .................................... C          Unknown  |
+|                                                                             |
+|  Note 1: C=Clear, S=Scrambled                                               |
+|  Note 2: Unless specified otherwise, bitrates are based on 188 bytes/pkt    |
+===============================================================================
+
+
+===============================================================================
+|  SERVICES ANALYSIS REPORT                                                   |
+|=============================================================================|
+|  Global PID's                                                               |
+|  TS packets: 969, PID's: 5 (clear: 5, scrambled: 0)                         |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Global PID's ................................. C       74,414 b/s  |
+|   Subt.  Global PSI/SI PID's (0x00-0x1F) .............. C       74,414 b/s  |
+|  0x0000  PAT .......................................... C        3,225 b/s  |
+|  0x0001  CAT .......................................... C        3,225 b/s  |
+|  0x0010  DVB-NIT ...................................... C          153 b/s  |
+|  0x0011  SDT/BAT ...................................... C          767 b/s  |
+|  0x0012  EIT .......................................... C       67,042 b/s  |
+|=============================================================================|
+|  Service: 0x00BA (186), TS: 0x0010 (16), Original Netw: 0x22D4 (8916)       |
+|  Service name: Telecinco, provider: MEDIASET                                |
+|  Service type: 0x01 (Digital television service)                            |
+|  TS packets: 0, PID's: 1 (clear: 1, scrambled: 0)                           |
+|  PMT PID: 0x044C (1100), PCR PID: None                                      |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Digital television service ................... C            0 b/s  |
+|  0x044C  PMT .......................................... C            0 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+|=============================================================================|
+|  Service: 0x00BB (187), TS: 0x0010 (16), Original Netw: 0x22D4 (8916)       |
+|  Service name: Cuatro, provider: MEDIASET                                   |
+|  Service type: 0x01 (Digital television service)                            |
+|  TS packets: 0, PID's: 1 (clear: 1, scrambled: 0)                           |
+|  PMT PID: 0x04B0 (1200), PCR PID: None                                      |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Digital television service ................... C            0 b/s  |
+|  0x04B0  PMT .......................................... C            0 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+|=============================================================================|
+|  Service: 0x00BC (188), TS: 0x0010 (16), Original Netw: 0x22D4 (8916)       |
+|  Service name: FDF, provider: MEDIASET                                      |
+|  Service type: 0x01 (Digital television service)                            |
+|  TS packets: 0, PID's: 1 (clear: 1, scrambled: 0)                           |
+|  PMT PID: 0x0514 (1300), PCR PID: None                                      |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Digital television service ................... C            0 b/s  |
+|  0x0514  PMT .......................................... C            0 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+|=============================================================================|
+|  Service: 0x00BD (189), TS: 0x0010 (16), Original Netw: 0x22D4 (8916)       |
+|  Service name: Divinity, provider: MEDIASET                                 |
+|  Service type: 0x01 (Digital television service)                            |
+|  TS packets: 0, PID's: 1 (clear: 1, scrambled: 0)                           |
+|  PMT PID: 0x0578 (1400), PCR PID: None                                      |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Digital television service ................... C            0 b/s  |
+|  0x0578  PMT .......................................... C            0 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+|=============================================================================|
+|  Service: 0x00BE (190), TS: 0x0010 (16), Original Netw: 0x22D4 (8916)       |
+|  Service name: Telecinco HD, provider: MEDIASET                             |
+|  Service type: 0x19 (Advanced codec HD digital television service)          |
+|  TS packets: 50,281, PID's: 7 (clear: 7, scrambled: 0)                      |
+|  PMT PID: 0x05DC (1500), PCR PID: 0x05DD (1501)                             |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Advanced codec HD digital television service . C    3,861,328 b/s  |
+|  0x044E  Teletext (spa, Initial Teletext page) ........ C      150,518 b/s  |
+|  0x05DC  PMT .......................................... C        3,148 b/s  |
+|  0x05DD  AVC video (1920x1080, high profile, level 4.1  C    3,293,736 b/s  |
+|  0x05DF  MPEG-1 Audio (spa, Audio layer II, 192 kb/s,   C      200,665 b/s  |
+|  0x05E0  MPEG-1 Audio (qaa, Audio layer II, 128 kb/s,   C      138,000 b/s  |
+|  0x05E1  MPEG-1 Audio (spa, visual impaired commentary  C       75,259 b/s  |
+|  0x05E2  MPEG-2 Private sections (AIT) ................ C            0 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+|=============================================================================|
+|  Service: 0x00BF (191), TS: 0x0010 (16), Original Netw: 0x22D4 (8916)       |
+|  Service name: Cuatro HD, provider: MEDIASET                                |
+|  Service type: 0x19 (Advanced codec HD digital television service)          |
+|  TS packets: 0, PID's: 1 (clear: 1, scrambled: 0)                           |
+|  PMT PID: 0x06A4 (1700), PCR PID: None                                      |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Advanced codec HD digital television service . C            0 b/s  |
+|  0x06A4  PMT .......................................... C            0 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+===============================================================================
+
+
+===============================================================================
+|  PIDS ANALYSIS REPORT                                                       |
+|=============================================================================|
+|  PID: 0x0000 (0)                                                       PAT  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: ..... 3,225 b/s  Packets: ............ 42  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 42  |
+|=============================================================================|
+|  PID: 0x0001 (1)                                                       CAT  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: ..... 3,225 b/s  Packets: ............ 42  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 42  |
+|=============================================================================|
+|  PID: 0x0010 (16)                                                  DVB-NIT  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: ....... 153 b/s  Packets: ............. 2  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ....... 2  |
+|=============================================================================|
+|  PID: 0x0011 (17)                                                  SDT/BAT  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: ....... 767 b/s  Packets: ............ 10  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 10  |
+|=============================================================================|
+|  PID: 0x0012 (18)                                                      EIT  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: .... 67,042 b/s  Packets: ........... 873  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ..... 435  |
+|=============================================================================|
+|  PID: 0x044E (1102)                                         Teletext (spa)  |
+|  PES stream id: 0xBD (Private stream 1)                                     |
+|  Initial Teletext page                                                      |
+|  Service: 0x00BE (190) Telecinco HD                                         |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 150,518 b/s  Packets: ......... 1,960  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            PCR: ................. 0  Packets: ........ 490  |
+|                                                      Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x05DC (1500)                                                    PMT  |
+|  Service: 0x00BE (190) Telecinco HD                                         |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 3,148 b/s  Packets: ............ 41  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 41  |
+|=============================================================================|
+|  PID: 0x05DD (1501)                                              AVC video  |
+|  PES stream id: 0xE0 (Video 0)                                              |
+|  1920x1080, high profile, level 4.1, 4:2:0                                  |
+|  Service: 0x00BE (190) Telecinco HD                                         |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: . 3,293,736 b/s  Packets: ........ 42,890  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ........ 1,528  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            PCR: ............... 577  Packets: ........ 961  |
+|                            TSrate: .. 3,935,743 b/s  Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x05DF (1503)                                     MPEG-1 Audio (spa)  |
+|  PES stream id: 0xC0 (Audio 0)                                              |
+|  Audio layer II, 192 kb/s, @48,000 Hz, stereo                               |
+|  Service: 0x00BE (190) Telecinco HD                                         |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 200,665 b/s  Packets: ......... 2,613  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: .......... 164  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            PCR: ................. 0  Packets: ........ 164  |
+|                                                      Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x05E0 (1504)                                     MPEG-1 Audio (qaa)  |
+|  PES stream id: 0xC0 (Audio 0)                                              |
+|  Audio layer II, 128 kb/s, @48,000 Hz, stereo                               |
+|  Service: 0x00BE (190) Telecinco HD                                         |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 138,000 b/s  Packets: ......... 1,797  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: .......... 163  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            PCR: ................. 0  Packets: ........ 163  |
+|                                                      Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x05E1 (1505)         MPEG-1 Audio (spa, visual impaired commentary)  |
+|  PES stream id: 0xC0 (Audio 0)                                              |
+|  Audio layer II, 64 kb/s, @48,000 Hz, single channel                        |
+|  Service: 0x00BE (190) Telecinco HD                                         |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: .... 75,259 b/s  Packets: ........... 980  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: .......... 163  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            PCR: ................. 0  Packets: ........ 163  |
+|                                                      Inv.Start: ........ 0  |
+===============================================================================
+
+
+===============================================================================
+|  TABLES & SECTIONS ANALYSIS REPORT                                          |
+|=============================================================================|
+|  PID: 0x0000 (0)                                                       PAT  |
+|-----------------------------------------------------------------------------|
+|  0x00 (0, PAT), TID ext: 0x0010 (16)                                        |
+|      Repetition: ..... 474  ms  Section cnt: ....... 42                     |
+|      Min repet.: ..... 378  ms  Table cnt: ......... 42                     |
+|      Max repet.: ..... 635  ms  Version: ............ 7                     |
+|=============================================================================|
+|  PID: 0x0001 (1)                                                       CAT  |
+|-----------------------------------------------------------------------------|
+|  0x01 (1, CAT), TID ext: 0xFFFF (65535)                                     |
+|      Repetition: ..... 474  ms  Section cnt: ....... 42                     |
+|      Min repet.: ..... 377  ms  Table cnt: ......... 42                     |
+|      Max repet.: ..... 635  ms  Version: ............ 1                     |
+|=============================================================================|
+|  PID: 0x0010 (16)                                                  DVB-NIT  |
+|-----------------------------------------------------------------------------|
+|  0x40 (64, NIT Actual), TID ext: 0x3104 (12548)                             |
+|      Repetition: ... 10652  ms  Section cnt: ........ 2                     |
+|      Min repet.: ... 10652  ms  Table cnt: .......... 2                     |
+|      Max repet.: ... 10652  ms  Version: ............ 2                     |
+|=============================================================================|
+|  PID: 0x0011 (17)                                                  SDT/BAT  |
+|-----------------------------------------------------------------------------|
+|  0x42 (66, SDT Actual), TID ext: 0x0010 (16)                                |
+|      Repetition: .... 1988  ms  Section cnt: ....... 10                     |
+|      Min repet.: .... 1706  ms  Table cnt: ......... 10                     |
+|      Max repet.: .... 2439  ms  Version: ............ 8                     |
+|=============================================================================|
+|  PID: 0x0012 (18)                                                      EIT  |
+|-----------------------------------------------------------------------------|
+|  0x4E (78, EIT p/f Actual), TID ext: 0x00BA (186)                           |
+|      Repetition: .... 1778  ms  Section cnt: ....... 22                     |
+|      Min repet.: .... 1446  ms  Table cnt: ......... 11                     |
+|      Max repet.: .... 2449  ms  Version: ........... 14                     |
+|-----------------------------------------------------------------------------|
+|  0x4E (78, EIT p/f Actual), TID ext: 0x00BB (187)                           |
+|      Repetition: .... 1784  ms  Section cnt: ....... 22                     |
+|      Min repet.: .... 1450  ms  Table cnt: ......... 11                     |
+|      Max repet.: .... 2392  ms  Version: ............ 6                     |
+|-----------------------------------------------------------------------------|
+|  0x4E (78, EIT p/f Actual), TID ext: 0x00BC (188)                           |
+|      Repetition: .... 1786  ms  Section cnt: ....... 22                     |
+|      Min repet.: .... 1444  ms  Table cnt: ......... 11                     |
+|      Max repet.: .... 2345  ms  Version: ........... 16                     |
+|-----------------------------------------------------------------------------|
+|  0x4E (78, EIT p/f Actual), TID ext: 0x00BD (189)                           |
+|      Repetition: .... 1780  ms  Section cnt: ....... 21                     |
+|      Min repet.: .... 1548  ms  Table cnt: ......... 11                     |
+|      Max repet.: .... 2465  ms  Version: ........... 28                     |
+|-----------------------------------------------------------------------------|
+|  0x4E (78, EIT p/f Actual), TID ext: 0x00BE (190)                           |
+|      Repetition: .... 1788  ms  Section cnt: ....... 22                     |
+|      Min repet.: .... 1456  ms  Table cnt: ......... 11                     |
+|      Max repet.: .... 2375  ms  Version: ........... 15                     |
+|-----------------------------------------------------------------------------|
+|  0x4E (78, EIT p/f Actual), TID ext: 0x00BF (191)                           |
+|      Repetition: .... 1787  ms  Section cnt: ....... 22                     |
+|      Min repet.: .... 1450  ms  Table cnt: ......... 11                     |
+|      Max repet.: .... 2362  ms  Version: ........... 11                     |
+|-----------------------------------------------------------------------------|
+|  0x50 (80, EIT schedule Actual), TID ext: 0x00BA (186)                      |
+|      Repetition: .... 9114  ms  Section cnt: ....... 48                     |
+|      Min repet.: .... 9114  ms  Table cnt: .......... 2                     |
+|      Max repet.: .... 9114  ms  Version: ............ 0                     |
+|-----------------------------------------------------------------------------|
+|  0x50 (80, EIT schedule Actual), TID ext: 0x00BB (187)                      |
+|      Repetition: .... 9060  ms  Section cnt: ....... 51                     |
+|      Min repet.: .... 9060  ms  Table cnt: .......... 2                     |
+|      Max repet.: .... 9060  ms  Version: ........... 29                     |
+|-----------------------------------------------------------------------------|
+|  0x50 (80, EIT schedule Actual), TID ext: 0x00BC (188)                      |
+|      Repetition: ... 10434  ms  Section cnt: ....... 52                     |
+|      Min repet.: ... 10434  ms  Table cnt: .......... 2                     |
+|      Max repet.: ... 10434  ms  Version: ............ 1                     |
+|-----------------------------------------------------------------------------|
+|  0x50 (80, EIT schedule Actual), TID ext: 0x00BD (189)                      |
+|      Repetition: ... 10180  ms  Section cnt: ....... 52                     |
+|      Min repet.: ... 10180  ms  Table cnt: .......... 2                     |
+|      Max repet.: ... 10180  ms  Version: ........... 11                     |
+|-----------------------------------------------------------------------------|
+|  0x50 (80, EIT schedule Actual), TID ext: 0x00BE (190)                      |
+|      Repetition: ... 10408  ms  Section cnt: ....... 49                     |
+|      Min repet.: ... 10408  ms  Table cnt: .......... 2                     |
+|      Max repet.: ... 10408  ms  Version: ............ 0                     |
+|-----------------------------------------------------------------------------|
+|  0x50 (80, EIT schedule Actual), TID ext: 0x00BF (191)                      |
+|      Repetition: .... 9170  ms  Section cnt: ....... 51                     |
+|      Min repet.: .... 9170  ms  Table cnt: .......... 2                     |
+|      Max repet.: .... 9170  ms  Version: ........... 24                     |
+|=============================================================================|
+|  PID: 0x05DC (1500)                                                    PMT  |
+|  Service: 0x00BE (190) Telecinco HD                                         |
+|-----------------------------------------------------------------------------|
+|  0x02 (2, PMT), TID ext: 0x00BE (190)                                       |
+|      Repetition: ..... 473  ms  Section cnt: ....... 41                     |
+|      Min repet.: ..... 380  ms  Table cnt: ......... 41                     |
+|      Max repet.: ..... 635  ms  Version: ........... 15                     |
+===============================================================================
+
