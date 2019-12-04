@@ -1,0 +1,492 @@
+
+===============================================================================
+|  TRANSPORT STREAM ANALYSIS REPORT                                           |
+|=============================================================================|
+|  Transport Stream Id: ....... 1008 (0x03F0)  |  Services: .............. 9  |
+|  Bytes: ........................ 24,393,000  |  PID's: Total: .......... 9  |
+|  TS packets: ...................... 129,750  |         Clear: .......... 9  |
+|     With invalid sync: .................. 0  |         Scrambled: ...... 0  |
+|     With transport error: ............... 0  |         With PCR's: ..... 1  |
+|     Suspect and ignored: ................ 0  |         Unreferenced: ... 0  |
+|-----------------------------------------------------------------------------|
+|  Transport stream bitrate, based on ....... 188 bytes/pkt    204 bytes/pkt  |
+|  User-specified: ................................... None             None  |
+|  Estimated based on PCR's: ................ 2,845,538 b/s    3,087,712 b/s  |
+|-----------------------------------------------------------------------------|
+|  Broadcast time: ..................................... 68 sec (1 mn 8 sec)  |
+|  First TDT UTC time stamp: ........................... 2019/12/03 14:17:04  |
+|  Last TDT UTC time stamp: ............................ 2019/12/03 14:18:02  |
+|  First TOT local time stamp: ......................... 2019/12/03 15:17:04  |
+|  Last TOT local time stamp: .......................... 2019/12/03 15:18:02  |
+|  TOT country code: ................................................... ESP  |
+|-----------------------------------------------------------------------------|
+|  Srv Id  Service Name                              Access          Bitrate  |
+|  0x01EA  La 1 ......................................... C          Unknown  |
+|  0x01EB  La 2 ......................................... C          Unknown  |
+|  0x01EC  24h .......................................... C          Unknown  |
+|  0x01ED  Clan ......................................... C          Unknown  |
+|  0x01EE  La 1 HD ...................................... C    2,640,549 b/s  |
+|  0x01EF  RNE Cataluña ................................. C          Unknown  |
+|  0x01F0  Radio 5 RNE .................................. C          Unknown  |
+|  0x01F1  Ràdio 4 RNE .................................. C          Unknown  |
+|  0x01F2  La 2 HD ...................................... C          Unknown  |
+|                                                                             |
+|  Note 1: C=Clear, S=Scrambled                                               |
+|  Note 2: Unless specified otherwise, bitrates are based on 188 bytes/pkt    |
+===============================================================================
+
+
+===============================================================================
+|  SERVICES ANALYSIS REPORT                                                   |
+|=============================================================================|
+|  Global PID's                                                               |
+|  TS packets: 9,347, PID's: 6 (clear: 6, scrambled: 0)                       |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Global PID's ................................. C      204,988 b/s  |
+|   Subt.  Global PSI/SI PID's (0x00-0x1F) .............. C      204,988 b/s  |
+|  0x0000  PAT .......................................... C        3,070 b/s  |
+|  0x0001  CAT .......................................... C        3,026 b/s  |
+|  0x0010  DVB-NIT ...................................... C          153 b/s  |
+|  0x0011  SDT/BAT ...................................... C        1,491 b/s  |
+|  0x0012  EIT .......................................... C      197,115 b/s  |
+|  0x0014  TDT/TOT ...................................... C          131 b/s  |
+|=============================================================================|
+|  Service: 0x01EA (490), TS: 0x03F0 (1008), Original Netw: 0x22D4 (8916)     |
+|  Service name: La 1, provider: RTVE                                         |
+|  Service type: 0x01 (Digital television service)                            |
+|  TS packets: 0, PID's: 1 (clear: 1, scrambled: 0)                           |
+|  PMT PID: 0x0064 (100), PCR PID: None                                       |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Digital television service ................... C            0 b/s  |
+|  0x0064  PMT .......................................... C            0 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+|=============================================================================|
+|  Service: 0x01EB (491), TS: 0x03F0 (1008), Original Netw: 0x22D4 (8916)     |
+|  Service name: La 2, provider: RTVE                                         |
+|  Service type: 0x01 (Digital television service)                            |
+|  TS packets: 0, PID's: 1 (clear: 1, scrambled: 0)                           |
+|  PMT PID: 0x00C8 (200), PCR PID: None                                       |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Digital television service ................... C            0 b/s  |
+|  0x00C8  PMT .......................................... C            0 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+|=============================================================================|
+|  Service: 0x01EC (492), TS: 0x03F0 (1008), Original Netw: 0x22D4 (8916)     |
+|  Service name: 24h, provider: RTVE                                          |
+|  Service type: 0x01 (Digital television service)                            |
+|  TS packets: 0, PID's: 1 (clear: 1, scrambled: 0)                           |
+|  PMT PID: 0x03E8 (1000), PCR PID: None                                      |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Digital television service ................... C            0 b/s  |
+|  0x03E8  PMT .......................................... C            0 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+|=============================================================================|
+|  Service: 0x01ED (493), TS: 0x03F0 (1008), Original Netw: 0x22D4 (8916)     |
+|  Service name: Clan, provider: RTVE                                         |
+|  Service type: 0x01 (Digital television service)                            |
+|  TS packets: 0, PID's: 1 (clear: 1, scrambled: 0)                           |
+|  PMT PID: 0x05DC (1500), PCR PID: None                                      |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Digital television service ................... C            0 b/s  |
+|  0x05DC  PMT .......................................... C            0 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+|=============================================================================|
+|  Service: 0x01EE (494), TS: 0x03F0 (1008), Original Netw: 0x22D4 (8916)     |
+|  Service name: La 1 HD, provider: RTVE                                      |
+|  Service type: 0x19 (Advanced codec HD digital television service)          |
+|  TS packets: 120,403, PID's: 8 (clear: 8, scrambled: 0)                     |
+|  PMT PID: 0x012C (300), PCR PID: 0x012D (301)                               |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Advanced codec HD digital television service . C    2,640,549 b/s  |
+|  0x0073  MPEG-2 Private sections (AIT) ................ C            0 b/s  |
+|  0x0074  DSM-CC Stream Descriptors .................... C            0 b/s  |
+|  0x012C  PMT .......................................... C        3,070 b/s  |
+|  0x012D  AVC video (1920x1080, high profile, level 4.1  C    2,374,220 b/s  |
+|  0x012E  E-AC-3 Audio (spa, E-AC-3, stereo (L,R), @48,  C      263,258 b/s  |
+|  0x012F  E-AC-3 Audio (qaa) ........................... C            0 b/s  |
+|  0x0130  E-AC-3 Audio (spa, visual impaired commentary  C            0 b/s  |
+|  0x0137  Subtitles (spa, DVB subtitles, no aspect rati  C            0 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+|=============================================================================|
+|  Service: 0x01EF (495), TS: 0x03F0 (1008), Original Netw: 0x22D4 (8916)     |
+|  Service name: RNE Cataluña, provider: RTVE                                 |
+|  Service type: 0x02 (Digital radio sound service)                           |
+|  TS packets: 0, PID's: 1 (clear: 1, scrambled: 0)                           |
+|  PMT PID: 0x07D0 (2000), PCR PID: None                                      |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Digital radio sound service .................. C            0 b/s  |
+|  0x07D0  PMT .......................................... C            0 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+|=============================================================================|
+|  Service: 0x01F0 (496), TS: 0x03F0 (1008), Original Netw: 0x22D4 (8916)     |
+|  Service name: Radio 5 RNE, provider: RTVE                                  |
+|  Service type: 0x02 (Digital radio sound service)                           |
+|  TS packets: 0, PID's: 1 (clear: 1, scrambled: 0)                           |
+|  PMT PID: 0x07EE (2030), PCR PID: None                                      |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Digital radio sound service .................. C            0 b/s  |
+|  0x07EE  PMT .......................................... C            0 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+|=============================================================================|
+|  Service: 0x01F1 (497), TS: 0x03F0 (1008), Original Netw: 0x22D4 (8916)     |
+|  Service name: Ràdio 4 RNE, provider: RTVE                                  |
+|  Service type: 0x02 (Digital radio sound service)                           |
+|  TS packets: 0, PID's: 1 (clear: 1, scrambled: 0)                           |
+|  PMT PID: 0x07F8 (2040), PCR PID: None                                      |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Digital radio sound service .................. C            0 b/s  |
+|  0x07F8  PMT .......................................... C            0 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+|=============================================================================|
+|  Service: 0x01F2 (498), TS: 0x03F0 (1008), Original Netw: 0x22D4 (8916)     |
+|  Service name: La 2 HD, provider: RTVE                                      |
+|  Service type: 0x19 (Advanced codec HD digital television service)          |
+|  TS packets: 0, PID's: 1 (clear: 1, scrambled: 0)                           |
+|  PMT PID: 0x0190 (400), PCR PID: None                                       |
+|-----------------------------------------------------------------------------|
+|     PID  Usage                                     Access          Bitrate  |
+|   Total  Advanced codec HD digital television service . C            0 b/s  |
+|  0x0190  PMT .......................................... C            0 b/s  |
+|          (C=Clear, S=Scrambled, +=Shared)                                   |
+===============================================================================
+
+
+===============================================================================
+|  PIDS ANALYSIS REPORT                                                       |
+|=============================================================================|
+|  PID: 0x0000 (0)                                                       PAT  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: ..... 3,070 b/s  Packets: ........... 140  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ..... 140  |
+|=============================================================================|
+|  PID: 0x0001 (1)                                                       CAT  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: ..... 3,026 b/s  Packets: ........... 138  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ..... 138  |
+|=============================================================================|
+|  PID: 0x0010 (16)                                                  DVB-NIT  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: ....... 153 b/s  Packets: ............. 7  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ....... 7  |
+|=============================================================================|
+|  PID: 0x0011 (17)                                                  SDT/BAT  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: ..... 1,491 b/s  Packets: ............ 68  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ...... 34  |
+|=============================================================================|
+|  PID: 0x0012 (18)                                                      EIT  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: ... 197,115 b/s  Packets: ......... 8,988  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ... 1,419  |
+|=============================================================================|
+|  PID: 0x0014 (20)                                                  TDT/TOT  |
+|-----------------------------------------------------------------------------|
+|  Global PID                Transport:                Discontinuities:       |
+|  Bitrate: ....... 131 b/s  Packets: ............. 6  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ....... 6  |
+|=============================================================================|
+|  PID: 0x012C (300)                                                     PMT  |
+|  Service: 0x01EE (494) La 1 HD                                              |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ..... 3,070 b/s  Packets: ........... 140  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ............ 0  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  Sections:              |
+|                            PCR: ................. 0  Unit start: ..... 140  |
+|=============================================================================|
+|  PID: 0x012D (301)                                               AVC video  |
+|  PES stream id: 0xE0 (Video 0)                                              |
+|  1920x1080, high profile, level 4.1, 4:2:0                                  |
+|  Service: 0x01EE (494) La 1 HD                                              |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: . 2,374,220 b/s  Packets: ....... 108,259  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: ........ 5,372  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            PCR: ............. 2,004  Packets: ...... 3,418  |
+|                            TSrate: .. 2,845,538 b/s  Inv.Start: ........ 0  |
+|=============================================================================|
+|  PID: 0x012E (302)                                      E-AC-3 Audio (spa)  |
+|  PES stream id: 0xBD (Private stream 1)                                     |
+|  E-AC-3, stereo (L,R), @48,000 Hz, complete main, bsid 16                   |
+|  Service: 0x01EE (494) La 1 HD                                              |
+|-----------------------------------------------------------------------------|
+|  Single Service PID        Transport:                Discontinuities:       |
+|  Bitrate: ... 263,258 b/s  Packets: ........ 12,004  Expected: ......... 0  |
+|  Access: .......... Clear  Adapt.F.: .......... 429  Unexpect: ......... 0  |
+|                            Duplicated: .......... 0  PES:                   |
+|                            PCR: ................. 0  Packets: ........ 429  |
+|                                                      Inv.Start: ........ 0  |
+===============================================================================
+
+
+===============================================================================
+|  TABLES & SECTIONS ANALYSIS REPORT                                          |
+|=============================================================================|
+|  PID: 0x0000 (0)                                                       PAT  |
+|-----------------------------------------------------------------------------|
+|  0x00 (0, PAT), TID ext: 0x03F0 (1008)                                      |
+|      Repetition: ..... 489  ms  Section cnt: ...... 140                     |
+|      Min repet.: ..... 344  ms  Table cnt: ........ 140                     |
+|      Max repet.: ..... 709  ms  Version: ............ 0                     |
+|=============================================================================|
+|  PID: 0x0001 (1)                                                       CAT  |
+|-----------------------------------------------------------------------------|
+|  0x01 (1, CAT), TID ext: 0xFFFF (65535)                                     |
+|      Repetition: ..... 500  ms  Section cnt: ...... 138                     |
+|      Min repet.: ..... 353  ms  Table cnt: ........ 138                     |
+|      Max repet.: ..... 712  ms  Version: ............ 0                     |
+|=============================================================================|
+|  PID: 0x0010 (16)                                                  DVB-NIT  |
+|-----------------------------------------------------------------------------|
+|  0x40 (64, NIT Actual), TID ext: 0x3117 (12567)                             |
+|      Repetition: .... 8990  ms  Section cnt: ........ 7                     |
+|      Min repet.: .... 7681  ms  Table cnt: .......... 7                     |
+|      Max repet.: .... 9967  ms  Version: ............ 0                     |
+|=============================================================================|
+|  PID: 0x0011 (17)                                                  SDT/BAT  |
+|-----------------------------------------------------------------------------|
+|  0x42 (66, SDT Actual), TID ext: 0x03F0 (1008)                              |
+|      Repetition: .... 2006  ms  Section cnt: ....... 33                     |
+|      Min repet.: .... 1497  ms  Table cnt: ......... 33                     |
+|      Max repet.: .... 2540  ms  Version: ............ 0                     |
+|=============================================================================|
+|  PID: 0x0012 (18)                                                      EIT  |
+|-----------------------------------------------------------------------------|
+|  0x4E (78, EIT p/f Actual), TID ext: 0x01EA (490)                           |
+|      Repetition: .... 6257  ms  Section cnt: ....... 23                     |
+|      Min repet.: .... 4972  ms  Table cnt: ......... 11                     |
+|      Max repet.: .... 7201  ms  Version: ............ 4                     |
+|-----------------------------------------------------------------------------|
+|  0x4E (78, EIT p/f Actual), TID ext: 0x01EB (491)                           |
+|      Repetition: .... 6217  ms  Section cnt: ....... 22                     |
+|      Min repet.: .... 4676  ms  Table cnt: ......... 11                     |
+|      Max repet.: .... 7388  ms  Version: ........... 29                     |
+|-----------------------------------------------------------------------------|
+|  0x4E (78, EIT p/f Actual), TID ext: 0x01EC (492)                           |
+|      Repetition: .... 5022  ms  Section cnt: ....... 28                     |
+|      Min repet.: .... 2843  ms  Table cnt: ......... 14                     |
+|      Max repet.: .... 6941  ms  Version: ........... 12                     |
+|-----------------------------------------------------------------------------|
+|  0x4E (78, EIT p/f Actual), TID ext: 0x01ED (493)                           |
+|      Repetition: .... 4121  ms  Section cnt: ....... 33                     |
+|      Min repet.: .... 1806  ms  Table cnt: ......... 17                     |
+|      Max repet.: .... 7127  ms  Version: ........... 10                     |
+|-----------------------------------------------------------------------------|
+|  0x4E (78, EIT p/f Actual), TID ext: 0x01EE (494)                           |
+|      Repetition: .... 6261  ms  Section cnt: ....... 23                     |
+|      Min repet.: .... 4983  ms  Table cnt: ......... 11                     |
+|      Max repet.: .... 7184  ms  Version: ............ 1                     |
+|-----------------------------------------------------------------------------|
+|  0x4E (78, EIT p/f Actual), TID ext: 0x01EF (495)                           |
+|      Repetition: .... 3061  ms  Section cnt: ....... 45                     |
+|      Min repet.: .... 1691  ms  Table cnt: ......... 23                     |
+|      Max repet.: .... 3655  ms  Version: ............ 4                     |
+|-----------------------------------------------------------------------------|
+|  0x4E (78, EIT p/f Actual), TID ext: 0x01F0 (496)                           |
+|      Repetition: .... 4751  ms  Section cnt: ....... 29                     |
+|      Min repet.: .... 2808  ms  Table cnt: ......... 15                     |
+|      Max repet.: .... 6880  ms  Version: ........... 28                     |
+|-----------------------------------------------------------------------------|
+|  0x4E (78, EIT p/f Actual), TID ext: 0x01F1 (497)                           |
+|      Repetition: .... 6057  ms  Section cnt: ....... 22                     |
+|      Min repet.: .... 4237  ms  Table cnt: ......... 11                     |
+|      Max repet.: .... 7501  ms  Version: ........... 24                     |
+|-----------------------------------------------------------------------------|
+|  0x4E (78, EIT p/f Actual), TID ext: 0x01F2 (498)                           |
+|      Repetition: .... 6217  ms  Section cnt: ....... 22                     |
+|      Min repet.: .... 4711  ms  Table cnt: ......... 11                     |
+|      Max repet.: .... 7354  ms  Version: ............ 0                     |
+|-----------------------------------------------------------------------------|
+|  0x4F (79, EIT p/f Other), TID ext: 0x9C41 (40001)                          |
+|      Repetition: .... 4121  ms  Section cnt: ....... 33                     |
+|      Min repet.: .... 1824  ms  Table cnt: ......... 17                     |
+|      Max repet.: .... 7123  ms  Version: ........... 23                     |
+|-----------------------------------------------------------------------------|
+|  0x4F (79, EIT p/f Other), TID ext: 0x9C42 (40002)                          |
+|      Repetition: .... 5994  ms  Section cnt: ....... 22                     |
+|      Min repet.: .... 4768  ms  Table cnt: ......... 11                     |
+|      Max repet.: .... 7068  ms  Version: ............ 2                     |
+|-----------------------------------------------------------------------------|
+|  0x4F (79, EIT p/f Other), TID ext: 0x9C43 (40003)                          |
+|      Repetition: .... 5991  ms  Section cnt: ....... 22                     |
+|      Min repet.: .... 4727  ms  Table cnt: ......... 11                     |
+|      Max repet.: .... 7079  ms  Version: ............ 3                     |
+|-----------------------------------------------------------------------------|
+|  0x4F (79, EIT p/f Other), TID ext: 0x9C44 (40004)                          |
+|      Repetition: .... 4115  ms  Section cnt: ....... 33                     |
+|      Min repet.: .... 1759  ms  Table cnt: ......... 17                     |
+|      Max repet.: .... 7181  ms  Version: ........... 31                     |
+|-----------------------------------------------------------------------------|
+|  0x4F (79, EIT p/f Other), TID ext: 0x9C45 (40005)                          |
+|      Repetition: .... 3878  ms  Section cnt: ....... 35                     |
+|      Min repet.: .... 1825  ms  Table cnt: ......... 18                     |
+|      Max repet.: .... 7177  ms  Version: ........... 11                     |
+|-----------------------------------------------------------------------------|
+|  0x4F (79, EIT p/f Other), TID ext: 0x9C46 (40006)                          |
+|      Repetition: .... 6265  ms  Section cnt: ....... 23                     |
+|      Min repet.: .... 5016  ms  Table cnt: ......... 11                     |
+|      Max repet.: .... 7171  ms  Version: ........... 18                     |
+|-----------------------------------------------------------------------------|
+|  0x4F (79, EIT p/f Other), TID ext: 0x9C47 (40007)                          |
+|      Repetition: .... 5415  ms  Section cnt: ....... 26                     |
+|      Min repet.: .... 3424  ms  Table cnt: ......... 13                     |
+|      Max repet.: .... 7290  ms  Version: ............ 3                     |
+|-----------------------------------------------------------------------------|
+|  0x50 (80, EIT schedule Actual), TID ext: 0x01EA (490)                      |
+|      Repetition: ... 37851  ms  Section cnt: ....... 44                     |
+|      Min repet.: ... 37851  ms  Table cnt: .......... 2                     |
+|      Max repet.: ... 37851  ms  Version: ........... 23                     |
+|-----------------------------------------------------------------------------|
+|  0x50 (80, EIT schedule Actual), TID ext: 0x01EB (491)                      |
+|      Repetition: ....... 0  ms  Section cnt: ....... 45                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 1                     |
+|      Max repet.: ....... 0  ms  Version: ............ 3                     |
+|-----------------------------------------------------------------------------|
+|  0x50 (80, EIT schedule Actual), TID ext: 0x01EC (492)                      |
+|      Repetition: ... 40043  ms  Section cnt: ....... 45                     |
+|      Min repet.: ... 40043  ms  Table cnt: .......... 2                     |
+|      Max repet.: ... 40043  ms  Version: ........... 10                     |
+|-----------------------------------------------------------------------------|
+|  0x50 (80, EIT schedule Actual), TID ext: 0x01ED (493)                      |
+|      Repetition: ....... 0  ms  Section cnt: ....... 53                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 1                     |
+|      Max repet.: ....... 0  ms  Version: ........... 24                     |
+|-----------------------------------------------------------------------------|
+|  0x50 (80, EIT schedule Actual), TID ext: 0x01EE (494)                      |
+|      Repetition: ... 38082  ms  Section cnt: ....... 47                     |
+|      Min repet.: ... 38082  ms  Table cnt: .......... 2                     |
+|      Max repet.: ... 38082  ms  Version: ........... 31                     |
+|-----------------------------------------------------------------------------|
+|  0x50 (80, EIT schedule Actual), TID ext: 0x01EF (495)                      |
+|      Repetition: ... 43362  ms  Section cnt: ....... 52                     |
+|      Min repet.: ... 43362  ms  Table cnt: .......... 2                     |
+|      Max repet.: ... 43362  ms  Version: ............ 6                     |
+|-----------------------------------------------------------------------------|
+|  0x50 (80, EIT schedule Actual), TID ext: 0x01F0 (496)                      |
+|      Repetition: ....... 0  ms  Section cnt: ....... 65                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 1                     |
+|      Max repet.: ....... 0  ms  Version: ........... 30                     |
+|-----------------------------------------------------------------------------|
+|  0x50 (80, EIT schedule Actual), TID ext: 0x01F1 (497)                      |
+|      Repetition: ....... 0  ms  Section cnt: ....... 40                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 1                     |
+|      Max repet.: ....... 0  ms  Version: ........... 14                     |
+|-----------------------------------------------------------------------------|
+|  0x50 (80, EIT schedule Actual), TID ext: 0x01F2 (498)                      |
+|      Repetition: ... 40563  ms  Section cnt: ....... 42                     |
+|      Min repet.: ... 40563  ms  Table cnt: .......... 2                     |
+|      Max repet.: ... 40563  ms  Version: ............ 4                     |
+|-----------------------------------------------------------------------------|
+|  0x51 (81, EIT schedule Actual), TID ext: 0x01EF (495)                      |
+|      Repetition: ... 42005  ms  Section cnt: ....... 42                     |
+|      Min repet.: ... 42005  ms  Table cnt: .......... 2                     |
+|      Max repet.: ... 42005  ms  Version: ........... 19                     |
+|-----------------------------------------------------------------------------|
+|  0x51 (81, EIT schedule Actual), TID ext: 0x01F0 (496)                      |
+|      Repetition: ... 50256  ms  Section cnt: ....... 41                     |
+|      Min repet.: ... 50256  ms  Table cnt: .......... 2                     |
+|      Max repet.: ... 50256  ms  Version: ........... 13                     |
+|-----------------------------------------------------------------------------|
+|  0x51 (81, EIT schedule Actual), TID ext: 0x01F1 (497)                      |
+|      Repetition: ... 58711  ms  Section cnt: ....... 30                     |
+|      Min repet.: ... 58711  ms  Table cnt: .......... 2                     |
+|      Max repet.: ... 58711  ms  Version: ............ 6                     |
+|-----------------------------------------------------------------------------|
+|  0x60 (96, EIT schedule Other), TID ext: 0x9C41 (40001)                     |
+|      Repetition: ....... 0  ms  Section cnt: ....... 53                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 1                     |
+|      Max repet.: ....... 0  ms  Version: ........... 27                     |
+|-----------------------------------------------------------------------------|
+|  0x60 (96, EIT schedule Other), TID ext: 0x9C42 (40002)                     |
+|      Repetition: ....... 0  ms  Section cnt: ....... 37                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 1                     |
+|      Max repet.: ....... 0  ms  Version: ........... 21                     |
+|-----------------------------------------------------------------------------|
+|  0x60 (96, EIT schedule Other), TID ext: 0x9C43 (40003)                     |
+|      Repetition: ... 47406  ms  Section cnt: ....... 41                     |
+|      Min repet.: ... 47406  ms  Table cnt: .......... 2                     |
+|      Max repet.: ... 47406  ms  Version: ........... 12                     |
+|-----------------------------------------------------------------------------|
+|  0x60 (96, EIT schedule Other), TID ext: 0x9C44 (40004)                     |
+|      Repetition: ....... 0  ms  Section cnt: ....... 53                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 1                     |
+|      Max repet.: ....... 0  ms  Version: ............ 9                     |
+|-----------------------------------------------------------------------------|
+|  0x60 (96, EIT schedule Other), TID ext: 0x9C45 (40005)                     |
+|      Repetition: ....... 0  ms  Section cnt: ....... 46                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 1                     |
+|      Max repet.: ....... 0  ms  Version: ........... 28                     |
+|-----------------------------------------------------------------------------|
+|  0x60 (96, EIT schedule Other), TID ext: 0x9C46 (40006)                     |
+|      Repetition: ....... 0  ms  Section cnt: ....... 45                     |
+|      Min repet.: ....... 0  ms  Table cnt: .......... 1                     |
+|      Max repet.: ....... 0  ms  Version: ........... 16                     |
+|-----------------------------------------------------------------------------|
+|  0x60 (96, EIT schedule Other), TID ext: 0x9C47 (40007)                     |
+|      Repetition: ... 47808  ms  Section cnt: ....... 45                     |
+|      Min repet.: ... 47808  ms  Table cnt: .......... 2                     |
+|      Max repet.: ... 47808  ms  Version: ........... 18                     |
+|-----------------------------------------------------------------------------|
+|  0x61 (97, EIT schedule Other), TID ext: 0x9C45 (40005)                     |
+|      Repetition: ... 46092  ms  Section cnt: ....... 37                     |
+|      Min repet.: ... 46092  ms  Table cnt: .......... 2                     |
+|      Max repet.: ... 46092  ms  Version: ........... 28                     |
+|-----------------------------------------------------------------------------|
+|  0x61 (97, EIT schedule Other), TID ext: 0x9C46 (40006)                     |
+|      Repetition: ... 46789  ms  Section cnt: ....... 35                     |
+|      Min repet.: ... 46789  ms  Table cnt: .......... 2                     |
+|      Max repet.: ... 46789  ms  Version: ........... 16                     |
+|-----------------------------------------------------------------------------|
+|  0x61 (97, EIT schedule Other), TID ext: 0x9C47 (40007)                     |
+|      Repetition: ... 44805  ms  Section cnt: ....... 39                     |
+|      Min repet.: ... 44805  ms  Table cnt: .......... 2                     |
+|      Max repet.: ... 44805  ms  Version: ........... 24                     |
+|=============================================================================|
+|  PID: 0x0014 (20)                                                  TDT/TOT  |
+|-----------------------------------------------------------------------------|
+|  0x70 (112, TDT)                                                            |
+|      Repetition: ... 29187  ms  Section cnt: ........ 3                     |
+|      Min repet.: ... 28895  ms                                              |
+|      Max repet.: ... 29480  ms                                              |
+|-----------------------------------------------------------------------------|
+|  0x73 (115, TOT)                                                            |
+|      Repetition: ... 29191  ms  Section cnt: ........ 3                     |
+|      Min repet.: ... 28871  ms                                              |
+|      Max repet.: ... 29510  ms                                              |
+|=============================================================================|
+|  PID: 0x012C (300)                                                     PMT  |
+|  Service: 0x01EE (494) La 1 HD                                              |
+|-----------------------------------------------------------------------------|
+|  0x02 (2, PMT), TID ext: 0x01EE (494)                                       |
+|      Repetition: ..... 489  ms  Section cnt: ...... 140                     |
+|      Min repet.: ..... 344  ms  Table cnt: ........ 140                     |
+|      Max repet.: ..... 709  ms  Version: ............ 6                     |
+===============================================================================
+
