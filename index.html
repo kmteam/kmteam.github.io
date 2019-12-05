@@ -1,17 +1,12 @@
 <!DOCTYPE html> 
 <html> 
-<body> 
-
+<body>
 <div style="text-align:center"> 
-  
-  
   <ul>
   <li><a href="#" onclick="playVideoFile('Vi320420191202242500243000000500.mp4')">Vi320420191202242500243000000500.mp4</a></li>
   <li><a href="#" onclick="playVideoFile('Vi320420191202243500244000000500.mp4')">Vi320420191202243500244000000500.mp4</a></li>
   <li><a href="#" onclick="playVideoFile('Vi320420191202244000244500000500.mp4')">Vi320420191202244000244500000500.mp4</a></li>
   </ul>
-  
-  
   <button onclick="playPause()">Play/Pause</button> 
   <button onclick="makeBig()">Big</button>
   <button onclick="makeSmall()">Small</button>
@@ -22,21 +17,14 @@
     <!--<source src="mov_bbb.ogg" type="video/ogg">-->
     Your browser does not support HTML5 video.
   </video>
-  
-  
   <hr />
-  
 	<p>
-
 	  <video id="video2" width="640" height="360" controls>
 	  <source src="Vi320420191202242500243000000500.mp4" type="video/mp4">
 	  Your browser does not support the video tag.
 	</video>
-
 	</p>
-
-</div> 
-
+</div>
 <script> 
 var myVideo = document.getElementById("video1");
 
@@ -61,9 +49,7 @@ function makeSmall() {
 
 function makeNormal() { 
     myVideo.width = 420; 
-} 
-
-</script> 
-
+}
+</script>
 </body> 
 </html>
