@@ -3,6 +3,15 @@
 <body> 
 
 <div style="text-align:center"> 
+  
+  
+  <ul>
+  <li><a href="#" onclick="playVideoFile('Vi320420191202242500243000000500.mp4')">Vi320420191202242500243000000500.mp4</a></li>
+  <li><a href="#" onclick="playVideoFile('Vi320420191202243500244000000500.mp4')">Vi320420191202243500244000000500.mp4</a></li>
+  <li><a href="#" onclick="playVideoFile('Vi320420191202244000244500000500.mp4')">Vi320420191202244000244500000500.mp4</a></li>
+  </ul>
+  
+  
   <button onclick="playPause()">Play/Pause</button> 
   <button onclick="makeBig()">Big</button>
   <button onclick="makeSmall()">Small</button>
@@ -16,6 +25,7 @@
   
   
   <hr />
+  
 	<p>
 
 	  <video id="video2" width="640" height="360" controls>
@@ -28,7 +38,7 @@
 </div> 
 
 <script> 
-var myVideo = document.getElementById("video1"); 
+var myVideo = document.getElementById("video1");
 
 function playPause() { 
   if (myVideo.paused) 
@@ -37,6 +47,10 @@ function playPause() {
     myVideo.pause(); 
 } 
 
+function playVideoFile(videoFile) {
+	myVideo.src = videoFile;
+	playPause();
+}
 function makeBig() { 
     myVideo.width = 560; 
 } 
@@ -48,6 +62,7 @@ function makeSmall() {
 function makeNormal() { 
     myVideo.width = 420; 
 } 
+
 </script> 
 
 </body> 
