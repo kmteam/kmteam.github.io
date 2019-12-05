@@ -7,11 +7,20 @@
   <li><a href="#" onclick="playVideoFile('Vi320420191202243500244000000500.mp4')">Vi320420191202243500244000000500.mp4</a></li>
   <li><a href="#" onclick="playVideoFile('Vi320420191202244000244500000500.mp4')">Vi320420191202244000244500000500.mp4</a></li>
   </ul>
+  
   <button onclick="playPause()">Play/Pause</button> 
   <button onclick="makeBig()">Big</button>
   <button onclick="makeSmall()">Small</button>
   <button onclick="makeNormal()">Normal</button>
   <br><br>
+  
+  <button onclick="setplaybackRate(1.5)">1.50x</button> 
+  <button onclick="setplaybackRate(1.25)">1.25x</button> 
+  <button onclick="setplaybackRate(1)">1.00x</button> 
+  <button onclick="setplaybackRate(0.75)">0.75x</button> 
+  <button onclick="setplaybackRate(0.5)">0.50x</button> 
+  <br><br>
+  
   <video id="video1" width="420">
     <source src="Vi320420191202242500243000000500.mp4" type="video/mp4">
     <!--<source src="mov_bbb.ogg" type="video/ogg">-->
@@ -28,6 +37,9 @@
 <script> 
 var myVideo = document.getElementById("video1");
 
+function setplaybackRate(rate) {
+	myVideo.playbackRate = rate;
+}
 function playPause() { 
   if (myVideo.paused) 
     myVideo.play(); 
