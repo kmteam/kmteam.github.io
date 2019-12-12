@@ -1,67 +1,72 @@
 <!DOCTYPE html> 
-<html> 
+<html>
 <body>
-<div style="text-align:center"> 
-  <ul>
-  <li><a href="#" onclick="playVideoFile('Vi320420191202242500243000000500.mp4')">Vi320420191202242500243000000500.mp4</a></li>
-  <li><a href="#" onclick="playVideoFile('Vi320420191202243500244000000500.mp4')">Vi320420191202243500244000000500.mp4</a></li>
-  <li><a href="#" onclick="playVideoFile('Vi320420191202244000244500000500.mp4')">Vi320420191202244000244500000500.mp4</a></li>
-  </ul>
-  
-  <button onclick="playPause()">Play/Pause</button> 
-  <button onclick="makeBig()">Big</button>
-  <button onclick="makeSmall()">Small</button>
-  <button onclick="makeNormal()">Normal</button>
-  <br><br>
-  
-  <button onclick="setplaybackRate(1.5)">1.50x</button> 
-  <button onclick="setplaybackRate(1.25)">1.25x</button> 
-  <button onclick="setplaybackRate(1)">1.00x</button> 
-  <button onclick="setplaybackRate(0.75)">0.75x</button> 
-  <button onclick="setplaybackRate(0.5)">0.50x</button> 
-  <br><br>
-  
-  <video id="video1" width="420">
-    <source src="Vi320420191202242500243000000500.mp4" type="video/mp4">
-    <!--<source src="mov_bbb.ogg" type="video/ogg">-->
-    Your browser does not support HTML5 video.
-  </video>
-  <hr />
-	<p>
-	  <video id="video2" width="640" height="360" controls>
-	  <source src="Vi320420191202242500243000000500.mp4" type="video/mp4">
-	  Your browser does not support the video tag.
-	</video>
-	</p>
-</div>
-<script> 
-var myVideo = document.getElementById("video1");
+    <div style="text-align:center">
+        <ul>
+            <li><a href="#" onclick="playVideoFile('Vi320420191202242500243000000500.mp4')">Vi320420191202242500243000000500.mp4</a></li>
+            <li><a href="#" onclick="playVideoFile('Vi320420191202243500244000000500.mp4')">Vi320420191202243500244000000500.mp4</a></li>
+            <li><a href="#" onclick="playVideoFile('Vi320420191202244000244500000500.mp4')">Vi320420191202244000244500000500.mp4</a></li>
+            <li><a href="#" onclick="playVideoFile('Vi413120191206171500172000000500.mp4')">Vi413120191206171500172000000500.mp4</a></li>
+        </ul>
 
-function setplaybackRate(rate) {
-	myVideo.playbackRate = rate;
-}
-function playPause() { 
-  if (myVideo.paused) 
-    myVideo.play(); 
-  else 
-    myVideo.pause(); 
-} 
+        <button onclick="playPause()">Play/Pause</button>
+        <button onclick="makeGiant()">Giant</button>
+        <button onclick="makeBig()">Big</button>
+        <button onclick="makeSmall()">Small</button>
+        <button onclick="makeNormal()">Normal</button>
+        <br><br>
 
-function playVideoFile(videoFile) {
-	myVideo.src = videoFile;
-	playPause();
-}
-function makeBig() { 
-    myVideo.width = 560; 
-} 
+        <button onclick="setplaybackRate(5.0)">5.0x</button>
+        <button onclick="setplaybackRate(2.0)">2.0x</button>
+        <button onclick="setplaybackRate(1.5)">1.50x</button>
+        <button onclick="setplaybackRate(1.25)">1.25x</button>
+        <button onclick="setplaybackRate(1)">1.00x</button>
+        <button onclick="setplaybackRate(0.75)">0.75x</button>
+        <button onclick="setplaybackRate(0.5)">0.50x</button>
+        <br><br>
 
-function makeSmall() { 
-    myVideo.width = 320; 
-} 
+        <video id="video1" width="420">
+            <source src="Vi413120191206171500172000000500.mp4" type="video/mp4">
+            <!--<source src="mov_bbb.ogg" type="video/ogg">-->
+            Your browser does not support HTML5 video.
+        </video>
+        <hr />
+        <p>
+            <video id="video2" width="640" height="360" controls>
+                <source src="Vi320420191202242500243000000500.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </p>
+    </div>
+    <script>
+        var myVideo = document.getElementById("video1");
 
-function makeNormal() { 
-    myVideo.width = 420; 
-}
-</script>
-</body> 
+        function setplaybackRate(rate) {
+            myVideo.playbackRate = rate;
+        }
+        function playPause() {
+            if (myVideo.paused)
+                myVideo.play();
+            else
+                myVideo.pause();
+        }
+
+        function playVideoFile(videoFile) {
+            myVideo.src = videoFile;
+            playPause();
+        }
+        function makeGiant() {
+            myVideo.width = 1440;
+        }
+        function makeBig() {
+            myVideo.width = 560;
+        }
+        function makeSmall() {
+            myVideo.width = 320;
+        }
+        function makeNormal() {
+            myVideo.width = 420;
+        }
+    </script>
+</body>
 </html>
