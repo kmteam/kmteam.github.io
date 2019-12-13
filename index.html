@@ -16,6 +16,9 @@
         <button onclick="makeNormal()">Normal</button>
         <br><br>
 
+        <button onclick="setplaybackRate(30.0)">30.0x</button>
+        <button onclick="setplaybackRate(20.0)">20.0x</button>
+        <button onclick="setplaybackRate(10.0)">10.0x</button>
         <button onclick="setplaybackRate(5.0)">5.0x</button>
         <button onclick="setplaybackRate(2.0)">2.0x</button>
         <button onclick="setplaybackRate(1.5)">1.50x</button>
@@ -23,9 +26,13 @@
         <button onclick="setplaybackRate(1)">1.00x</button>
         <button onclick="setplaybackRate(0.75)">0.75x</button>
         <button onclick="setplaybackRate(0.5)">0.50x</button>
+        <button onclick="setplaybackRate(-1)">-1.00x</button>
+
+        <br><br>
+        Go to second: <input id="txtPos" type="text" value="120" /> <button onclick="seek(document.getElementById('txtPos').value)">Go</button>
         <br><br>
 
-        <video id="video1" width="420">
+        <video id="video1" width="640" height="360" controls>
             <source src="Vi413120191206171500172000000500.mp4" type="video/mp4">
             <!--<source src="mov_bbb.ogg" type="video/ogg">-->
             Your browser does not support HTML5 video.
@@ -44,6 +51,11 @@
         function setplaybackRate(rate) {
             myVideo.playbackRate = rate;
         }
+
+        function seek(currentTime) {
+          myVideo.currentTime = currentTime;
+        }
+
         function playPause() {
             if (myVideo.paused)
                 myVideo.play();
