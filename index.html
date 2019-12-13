@@ -26,7 +26,7 @@
         <button onclick="setplaybackRate(1)">1.00x</button>
         <button onclick="setplaybackRate(0.75)">0.75x</button>
         <button onclick="setplaybackRate(0.5)">0.50x</button>
-        <button onclick="setplaybackRate(-1)">-1.00x</button>
+        <button onclick="document.getElementById('video1').playBackwards()">-1.00x</button>
 
         <br><br>
         Go to second: <input id="txtPos" type="text" value="120" /> <button onclick="seek(document.getElementById('txtPos').value)">Go</button>
@@ -67,6 +67,7 @@
             myVideo.src = videoFile;
             playPause();
         }
+
         function makeGiant() {
             myVideo.width = 1440;
         }
@@ -79,6 +80,24 @@
         function makeNormal() {
             myVideo.width = 420;
         }
+
+        HTMLVideoElement.prototype.playBackwards = function() {
+            this.pause();
+
+            var video = this;
+
+            var fps = 25;
+            var intervalRewind = setInterval(function() {
+                if(video.currentTime == 0){
+                  clearInterval(intervalRewind);
+                  video.pause();
+                }
+                else {
+                    video.currentTime += -(1/fps);
+                }
+            }, 1000 / fps);
+        };
+
     </script>
 </body>
 </html>
