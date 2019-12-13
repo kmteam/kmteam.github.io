@@ -4,57 +4,89 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
 </head>
-<body>
-    <div style="text-align:center">
-        <ul>
-            <li><a href="#" onclick="playVideoFile('Vi320420191202242500243000000500.mp4')">Vi320420191202242500243000000500.mp4</a></li>
-            <li><a href="#" onclick="playVideoFile('Vi320420191202243500244000000500.mp4')">Vi320420191202243500244000000500.mp4</a></li>
-            <li><a href="#" onclick="playVideoFile('Vi320420191202244000244500000500.mp4')">Vi320420191202244000244500000500.mp4</a></li>
-            <li><a href="#" onclick="playVideoFile('Vi413120191206171500172000000500.mp4')">Vi413120191206171500172000000500.mp4</a></li>
-        </ul>
+<body >
+    <div class="container" style="text-align:center">
 
-        <button onclick="playPause()">Play/Pause</button>
-        <button onclick="makeGiant()">Giant</button>
-        <button onclick="makeBig()">Big</button>
-        <button onclick="makeSmall()">Small</button>
-        <button onclick="makeNormal()">Normal</button>
-        <br><br>
+      <div class="row">
+          <div class="col-md-4"></div>
+          <div class="col-md-4">
+              <ul class="list-group" >
+                  <li class="list-group-item"><a href="#" onclick="playVideoFile('Vi320420191202242500243000000500.mp4')">Vi320420191202242500243000000500.mp4</a></li>
+                  <li class="list-group-item"><a href="#" onclick="playVideoFile('Vi320420191202243500244000000500.mp4')">Vi320420191202243500244000000500.mp4</a></li>
+                  <li class="list-group-item"><a href="#" onclick="playVideoFile('Vi320420191202244000244500000500.mp4')">Vi320420191202244000244500000500.mp4</a></li>
+                  <li class="list-group-item" ><a href="#" onclick="playVideoFile('Vi413120191206171500172000000500.mp4')">Vi413120191206171500172000000500.mp4</a></li>
+              </ul>
+          </div>
+          <div class="col-md-4"></div>
+    
+      </div>
+      
+      <div clas="row">      
 
-        <button onclick="setplaybackRate(30.0)">30.0x</button>
-        <button onclick="setplaybackRate(20.0)">20.0x</button>
-        <button onclick="setplaybackRate(10.0)">10.0x</button>
-        <button onclick="setplaybackRate(5.0)">5.0x</button>
-        <button onclick="setplaybackRate(2.0)">2.0x</button>
-        <button onclick="setplaybackRate(1.5)">1.50x</button>
-        <button onclick="setplaybackRate(1.25)">1.25x</button>
-        <button onclick="setplaybackRate(1)">1.00x</button>
-        <button onclick="setplaybackRate(0.75)">0.75x</button>
-        <button onclick="setplaybackRate(0.5)">0.50x</button>
-        <button onclick="document.getElementById('video1').playBackwards()">-1.00x</button>
+          <button onclick="frameBackward()" title="Frame backward"><span alt="frame backward" class="glyphicon glyphicon-step-backward"></span></button>
+          <button onclick="playPause()">Play/Pause</button>
+          <button onclick="frameForward()" title="Frame forward"><span alt="frame forward" class="glyphicon glyphicon-step-forward"></span></button>
+  
+  
+          <button onclick="makeGiant()">Giant</button>
+          <button onclick="makeBig()">Big</button>
+          <button onclick="makeSmall()">Small</button>
+          <button onclick="makeNormal()">Normal</button>
+          <br><br>
+  
+          <button onclick="setplaybackRate(30.0)">30.0x</button>
+          <button onclick="setplaybackRate(20.0)">20.0x</button>
+          <button onclick="setplaybackRate(10.0)">10.0x</button>
+          <button onclick="setplaybackRate(5.0)">5.0x</button>
+          <button onclick="setplaybackRate(2.0)">2.0x</button>
+          <button onclick="setplaybackRate(1.5)">1.50x</button>
+          <button onclick="setplaybackRate(1.25)">1.25x</button>
+          <button onclick="setplaybackRate(1)">1.00x</button>
+          <button onclick="setplaybackRate(0.75)">0.75x</button>
+          <button onclick="setplaybackRate(0.5)">0.50x</button>
+          <button onclick="document.getElementById('video1').playBackwards()">-1.00x</button>
+  
+          <br><br>
+          Go to second: <input id="txtPos" type="text" value="120" /> <button onclick="seek(document.getElementById('txtPos').value)">Go</button>
+          <br><br>
+  
+          <video id="video1" width="640" height="360" controls>
+              <source src="Vi413120191206171500172000000500.mp4" type="video/mp4">
+              <!--<source src="mov_bbb.ogg" type="video/ogg">-->
+              Your browser does not support HTML5 video.
+          </video>
+          <hr />
+          <p>
+              <video id="video2" width="640" height="360" controls>
+                  <source src="Vi320420191202242500243000000500.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+              </video>
+          </p>
+      </div>
+    
 
-        <br><br>
-        Go to second: <input id="txtPos" type="text" value="120" /> <button onclick="seek(document.getElementById('txtPos').value)">Go</button>
-        <br><br>
-
-        <video id="video1" width="640" height="360" controls>
-            <source src="Vi413120191206171500172000000500.mp4" type="video/mp4">
-            <!--<source src="mov_bbb.ogg" type="video/ogg">-->
-            Your browser does not support HTML5 video.
-        </video>
-        <hr />
-        <p>
-            <video id="video2" width="640" height="360" controls>
-                <source src="Vi320420191202242500243000000500.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </p>
+  
+    
     </div>
     <script>
         var myVideo = document.getElementById("video1");
 
         function setplaybackRate(rate) {
             myVideo.playbackRate = rate;
+        }
+
+        function frameBackward() {
+          myVideo.frameBackwards(25);
+        }
+
+        function frameForward() {
+          myVideo.frameForward(25);
         }
 
         function seek(currentTime) {
@@ -101,6 +133,18 @@
                     video.currentTime += -(1/fps);
                 }
             }, 1000 / fps);
+        };
+
+        HTMLVideoElement.prototype.frameForward = function(fps) {
+            this.pause();
+            var video = this;
+            video.currentTime += -(1/fps);
+        };
+
+        HTMLVideoElement.prototype.frameBackwards = function(fps) {
+            this.pause();
+            var video = this;
+            video.currentTime -= -(1/fps);
         };
 
     </script>
