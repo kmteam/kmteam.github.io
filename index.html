@@ -78,8 +78,10 @@
     </div>
     <script>
         var myVideo = document.getElementById("video1");
+		var lblCurrentTime = document.getElementById("lblCurrentTime");
 		myVideo.addEventListener("ended",onVideoEnd);
-		myVideo.addEventListener("ontimeupdate",onTimeUpdate);
+		myVideo.addEventListener("timeupdate",onTimeUpdate);
+		//myVideo.ontimeupdate =function() { onTimeUpdate()};
 
         function setplaybackRate(rate) {
             myVideo.playbackRate = rate;
@@ -128,7 +130,7 @@
 		}
 
 		function onTimeUpdate() {
-			document.getElementById("lblCurrentTime").innerHTML = myVideo.currentTime;
+			lblCurrentTime.innerHTML = myVideo.currentTime;
 		}
 
         HTMLVideoElement.prototype.playBackwards = function() {
