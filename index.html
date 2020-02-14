@@ -76,6 +76,7 @@
     </div>
     <script>
         var myVideo = document.getElementById("video1");
+		myVideo.addEventListener("ended",onVideoEnd);
 
         function setplaybackRate(rate) {
             myVideo.playbackRate = rate;
@@ -117,6 +118,11 @@
         function makeNormal() {
             myVideo.width = 420;
         }
+		
+		function onVideoEnd() {
+			.setAttribute('poster','continuara.jpg');
+		}
+
 
         HTMLVideoElement.prototype.playBackwards = function() {
             this.pause();
