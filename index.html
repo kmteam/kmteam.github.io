@@ -61,6 +61,8 @@
               <!--<source src="mov_bbb.ogg" type="video/ogg">-->
               Your browser does not support HTML5 video.
           </video>
+		  <div id="lblCurrentTime">
+		  </div>
           <hr />
           <p>
               <video id="video2" width="640" height="360" controls>
@@ -77,6 +79,7 @@
     <script>
         var myVideo = document.getElementById("video1");
 		myVideo.addEventListener("ended",onVideoEnd);
+		myVideo.addEventListener("ontimeupdate",onTimeUpdate);
 
         function setplaybackRate(rate) {
             myVideo.playbackRate = rate;
@@ -124,6 +127,9 @@
 			myVideo.setAttribute('poster','continuara.jpg');
 		}
 
+		function onTimeUpdate() {
+			document.getElementById("lblCurrentTime").innerHTML = myVideo.currentTime;
+		}
 
         HTMLVideoElement.prototype.playBackwards = function() {
             this.pause();
